@@ -34,13 +34,9 @@ THE SOFTWARE.
 ===============================================
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <string.h>
-#include <stdint.h>
 #include "MPU6050.h"
 
+using namespace std;
 /** Default constructor, uses default I2C address.
  * @see MPU6050_DEFAULT_ADDRESS
  */

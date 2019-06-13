@@ -41,8 +41,19 @@ THE SOFTWARE.
 ===============================================
 */
 
-#ifndef _I2CDEV_H_
-#define _I2CDEV_H_
+#ifndef I2CDEV_H
+
+#include <cstdio>
+#include <cstdint>
+#include <cstdlib>
+#include <cstring>
+#include <unistd.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <sys/ioctl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <linux/i2c-dev.h>
 
 #ifndef TRUE
 #define TRUE	(1==1)
@@ -74,4 +85,5 @@ class I2Cdev {
         static uint16_t readTimeout;
 };
 
-#endif /* _I2CDEV_H_ */
+#define I2CDEV_H
+#endif
